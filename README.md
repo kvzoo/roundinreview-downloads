@@ -19,13 +19,12 @@ The publicly published v1.5.1 installer metadata is:
 
 ## Release verification (maintainers)
 
-1. Obtain the exact approved installer binary from the private `kvzoo/cs2-demo-library` v1.5.1 release, using authenticated access.
-2. Confirm its SHA-256 is exactly `034953be1fdbe9a9fa10070e9c280712a1cb71eaf65e46a6676d540327b9a5a2`. Confirm there are no bundled credentials or private files.
-3. Create a GitHub Release in **this** public repository with tag `v1.5.1`. Upload the installer as a **release asset**, not as a Git-tracked file or source tree. Upload a checksum text file listing the exact filename and digest.
-4. Open the public download in a signed-out browser; retrieve it and recheck the SHA-256 of the downloaded file. Confirm the release remains public.
-5. Only after these checks, configure the reviewed public HTTPS asset URL **and** SHA-256 together in the website's `dist/download-config.js` through a feature PR and normal release approvals.
+1. Confirm the public release contains only the approved installer and checksum; no source code, credentials, or private materials.
+2. GitHub reports identical installer size (113851952 bytes) and SHA-256 for the original private and new public v1.5.1 release assets.
+3. **Still required:** retrieve the installer while signed out and independently compute the downloaded file's SHA-256. It must equal `034953be1fdbe9a9fa10070e9c280712a1cb71eaf65e46a6676d540327b9a5a2`.
+4. The public HTTPS download URL and digest are configured together in website feature PR #8. Review CI and browser behavior before approving the website release.
 
-Do not mirror the private source repository, demo files, logs, access tokens or development artifacts here. Keep public release notes factual, and do not claim Windows versions or Steam onboarding paths that have not been tested.
+Never mirror the private source repository, demos, logs, access tokens, or developer artifacts here.
 
 ## Verify a download on Windows
 
