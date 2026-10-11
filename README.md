@@ -4,9 +4,9 @@ This repository is the **public, binaries-only distribution location** for [Roun
 
 ## Download status
 
-**Public installer upload pending.** The approved installer must be uploaded as an asset on a GitHub [Release](https://github.com/kvzoo/roundinreview-downloads/releases), and the public download must be checked before the website advertises it.
+**Public beta installer published:** [CS2 Demo Library v1.5.1](https://github.com/kvzoo/roundinreview-downloads/releases/tag/v1.5.1). The installer and checksum are uploaded. Independent signed-out download and file hashing remain launch acceptance checks.
 
-The existing internal v1.5.1 release asset is:
+The publicly published v1.5.1 installer metadata is:
 
 | Field | Value |
 | --- | --- |
@@ -15,9 +15,9 @@ The existing internal v1.5.1 release asset is:
 | Size | `113851952` bytes |
 | SHA-256 reported by the original GitHub release asset | `034953be1fdbe9a9fa10070e9c280712a1cb71eaf65e46a6676d540327b9a5a2` |
 
-**Do not publish a different binary under this filename/checksum.** The checksum shown above is based on the original private GitHub release asset metadata, not on a verification of a public mirror (none has been published yet).
+**Verification:** GitHub reports the same installer size and SHA-256 in the private and public releases. Independent download and byte-level hashing have not yet been performed.
 
-## Release process (maintainers)
+## Release verification (maintainers)
 
 1. Obtain the exact approved installer binary from the private `kvzoo/cs2-demo-library` v1.5.1 release, using authenticated access.
 2. Confirm its SHA-256 is exactly `034953be1fdbe9a9fa10070e9c280712a1cb71eaf65e46a6676d540327b9a5a2`. Confirm there are no bundled credentials or private files.
